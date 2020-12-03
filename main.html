@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Creating a Faveicon -->
+    <link rel="website icon" href="./images/logo.jpg" type="jpg">
+    
+
+</head>
+<body>
+    <header id="Webpage name" class="Web-name">
+        <div class="name">
+            <h1 class="comp-logo">TME Services</h1>
+            <!--Creating the navigation bar -->
+            <nav class="navbar">
+                <ul>
+                    <li class="home"><a href="main.html">HOME</a></li>
+                    <li><a href="#about-us">ABOUT US</a></li>
+                    <li><a href="#benefits">BENEFITS</a></li>
+                    <li><a href="#Team">OUR TEAM</a></li>
+                    <div class="drop-down">
+                        <button class="drpbuttn">YOUR INFO
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropcontent">
+                            <a href="loginpage.html">LOG IN</a>
+                            <a href="signup.html">SIGN UP</a>
+                        </div>
+
+                    </div>
+                    <li><a href="loginpage.html">LOGOUT</a></li>
+                </ul>
+            </nav>
+
+            <a href="#about-us" class="homepage">Let's Get Started</a>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="getstarted">
+            <div class="container">
+                <div class="items">
+                    <div data-oas="fade-up" data-aos-delay="200">
+                        <h1>Tax Made Easy</h1>
+                        <h2>Track your taxes today to avoid double payments</h2>
+                        <div class="d-lg-flex">
+                            <a href="#about-us" class="get-started-button">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--Information about Us-->
+        <section id="aboutUs" class="aboutus">
+            <div class="container" data-oas="fade-up">
+                <div class="heading">
+                    <h2>About Us</h2>
+                </div>
+                <p><span>
+                    TME is a Tax Management Company that provides citizens with the opportunity of tracking their tax history
+                    as well as their future payments. The company was created on Dec, 1 2018. Our Head quaters is at East Legon.
+                    The founder of the company is Miss Marie Amoah. 
+                </span></p>
+            </div>
+        </section>
+    
+        <!--Contact us Section-->
+        <section id="contact-info" class="contact-us">
+            <div class="commuication" data-oas="fade-up"></div>
+            <div class="heading">
+                <h2>Contact Us</h2>
+                <p>Want to speak with us directly? Contact Us!</p>
+            </div>
+            <div class="align">
+                <div class="col-lg-5-d-flex align-items-stretch">
+                    <div class="userinfo">
+                        <div class="address">
+                            <i class="location"></i>
+                            <h4>Location:</h4>
+                            <p>American House, East Legon</p>
+                        </div>
+    
+                        <div class="email">
+                            <i class="email-icon"></i>
+                            <h4>Email</h4>
+                            <p>TME@gmail.com</p>
+                        </div>
+    
+                        <div class="number">
+                            <i class="phone"></i>
+                            <h4>Tel:</h4>
+                            <p>+233 (2023756789)</p>
+                        </div>
+    
+                        <!--Validating info details-->
+                        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                            <form action="Contactusform.php" method="POST" role="form" class="contact-form">
+                                <div class="form">
+                                    <div class="contact-frm">
+                                        <label for="Name">Your Name</label>
+                                        <input type="text" name="name" class="form-info" id="userName" />
+                                        <div class="validateinfo"></div>
+                                    </div>
+                                    <div class="contact-frm">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-info" name="email" id="email" data-rule="email" data-msg="Kindly enter a valid email" />
+                                        <div class="validateinfo"></div>
+                                    </div>
+                                    <div class="contact-frm">
+                                        <label for="name">Any Complaints/Comments</label>
+                                        <textarea name="message" class="form-info" cols="30" rows="10"></textarea>
+                                        <div class="validateinfo"></div>
+                                    </div>
+                                    <div class="submit"><button type="submit">Send</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="#" class="swipe"><i class="ri-arrow-up-line"></i></a>
+    <div id="animate-up"></div>
+</body>
+</html>

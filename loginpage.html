@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--This page designs the structure of the log in page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="website icon" href="./images/logo.jpg" type="jpg">
+</head>
+<body>
+    <div class="login">
+       <strong><h2 class="page-heading">LOGIN TO GET STARTED &#128512</h2></strong>
+       <p>Kindly log in to access your info</p>
+  
+        <div id="id01" class="form-items">
+            <form class="content animate" action="validate.php" method="post">
+
+            <!--Line 16 to 18 is to give the users the option to specify if he/she is an admin or citizen-->
+            <div class="user-options">
+                <input type="radio" name="status" id="user-type" value="admin">
+                <label for="admin">Admin</label>
+                <input type="radio" name="status" id="usertype" value="user">
+                <label for="user">User</label>
+            </div>
+            <div class="container">
+                    <i class="fas fa-user"></i>
+                    <label for="name"><b>Username:</b></label>
+                    <input type="text" id="user-name" name="usename" placeholder="Username" class="text_field">
+
+                    <i class="fas fa-lock"></i>
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" id="password" name="pass-word" placeholder="Password" class="field">
+
+                    <button type="submit" class="login_button">LOG IN</button>
+                    <input type="checkbox" checked="checked"> Remember Me 
+            </div>
+            <div>
+                <button type="button" class="back_button"><a href="main.html">Back</a></button>
+                <span class="forgot_passwrd"><a href="forgot_password.html">Forgot Password</a></span>
+            </div>
+            </form>
+            <script> 
+                var frm = document.getElementById('id01'); 
+                window.onclick = function(event) { 
+                    if (event.target == frm) { 
+                        frm.style.display = "none"; 
+                    } 
+                } 
+            </script> 
+        </div>
+    </div>
+</body>
+</html>

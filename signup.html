@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--This page designs the structure of the sign up page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="website icon" href="./images/logo.jpg" type="jpg">
+</head>
+<body>
+    <div class="log">
+        <strong><h1 class="page-heading">SIGN UP TO GET STARTED &#128512</h1></strong>
+        <div class="same-line">
+            <div class="word">
+                <p>Kindly fill the form below to create an account</p>
+            </div>
+        </div>
+        <form action="validate.php" method="post"></form>
+        <!--Line 16 to 18 is to give the users the option to specify if he/she is an admin or citizen-->
+        <div class="user-options">
+            <input type="radio" name="status" id="user-type" value="admin">
+            <label for="admin">Admin</label>
+            <input type="radio" name="status" id="usertype" value="user">
+            <label for="user">User</label>
+            <p></p>
+        </div>
+        <div class="container">
+             <div class="fname">
+                <i class="fas fa-user"></i>
+                First Name: <input type="text" id="first-name" name="firstname" placeholder="First Name" class="field">
+                <p class="divider"></p>
+            </div>
+            <div class="lastname">
+                <i class="fas fa-user"></i>
+                Last Name: <input type="text" id="last-name" name="lastname" placeholder="Last Name" class="field">
+                <p class="divider"></p>
+            </div>
+            <div class="Email">
+                <i class="fas fa-user"></i>
+                Email:<input type="text" id="email" name="Email" placeholder="Email" class="field">
+                <p class="divider"></p>
+            </div>
+            <div class="username">
+                <i class="fas fa-user"></i>
+                Username: <input type="text" id="user-name" name="usename" placeholder="Username" class="field">
+                <p class="divider"></p>
+            </div>
+            <div class="password">
+                <i class="fas fa-lock"></i>
+                Password: <input type="text" id="password" name="pass-word" placeholder="Password" class="field">
+                <p></p>
+            </div>
+            <div class="password">
+                <i class="fas fa-user"></i>
+                Confirm Password: <input type="text" id="password" name="pass-word" placeholder="Confirm Password" class="field">
+                <p class="divider"></p>
+            </div>
+            <div class="send">
+                <input type="submit" value="Submit" class="sub-field">
+    
+            </div>
+        </div>
+    <div class="flex-container">
+        <div><a href="http://">Facebook</a></div>
+        <div><a href="http://">Twitter</a></div>
+        <div><a href="http://">Instagram</a></div>
+        <div><p>Email us @ gra@gmail.com</p></div>
+    </div>
+        
+    </div>
+</body>
+</html>

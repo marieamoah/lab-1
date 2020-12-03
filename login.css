@@ -1,0 +1,116 @@
+body{
+    background-color: blanchedalmond;
+}
+.page-heading {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login p {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+form {
+    border: 3px white;
+
+}
+.login_button , .Cancel_button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20px;
+    
+
+}
+.login_button:hover {
+    background-color: rgb(32, 135, 143);
+    opacity: 0.6;
+}
+.back_button{
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+}
+
+.back_button:hover {
+    background-color: rgb(110, 72, 72);
+    opacity: inherit;
+}
+
+.text_field, .field {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1.5px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+span.forgot_passwrd {
+    float: right;
+    padding-top: 16px;
+}
+
+.form-items {
+    position: fixed;
+    z-index: 1;
+    left: 40%;
+    right: 50%;
+    top: 10%;
+    bottom: 2%;
+    width: 55%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.content {
+    background-color: white;
+    margin: 5% auto 15% auto;
+    border: 1.5px solid grey;
+    width: 80%;
+}
+
+.animate { 
+    -webkit-animation: animatezoom 0.6s; 
+    animation: animatezoom 0.6s 
+} 
+  
+@-webkit-keyframes animatezoom { 
+    from { 
+        -webkit-transform: scale(0) 
+    } 
+    to { 
+        -webkit-transform: scale(1) 
+    } 
+} 
+  
+@keyframes animatezoom { 
+    from { 
+        transform: scale(0) 
+    } 
+    to { 
+        transform: scale(1) 
+    } 
+} 
+  
+@media screen and (max-width: 300px) { 
+    span.forgot_passwrd { 
+        display: block; 
+        float: none; 
+    } 
+    .back_button { 
+        width: 50%; 
+    } 
+} 
+
+.flex-container {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
